@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hello, World!</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <form class="form">
+    <h2>Registration Form</h2>
+
+    <div class="form-control">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+    </div>
+
+    <div class="form-control">
+      <label for="email">E-mail</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+    </div>
+
+    <div class="form-control">
+      <label for="age">Age</label>
+      <input type="number" id="age" placeholder="Enter your age" min="0" required>
+    </div>
+
+    <div class="form-control">
+      <label for="role">Which option best describes you?</label>
+      <select name="role" id="role" required>
+        <option value="" disabled selected>Select your option</option>
+        <option value="Student">Student</option>
+        <option value="Intern">Intern</option>
+        <option value="Professional">Professional</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-control">
+      <label>Would you recommend GitHub to your friends?</label><br>
+      <input type="radio" id="recomm-yes" name="recommend" value="Yes">Yes<br>
+      <input type="radio" id="recomm-no" name="recommend" value="No">No<br>
+      <input type="radio" id="recomm-maybe" name="recommend" value="Maybe">Maybe<br>
+    </div>
+
+    <div class="form-control">
+      <label>Languages and frameworks known (check all that apply)</label><br>
+      <input type="checkbox" id="lang-c" name="languages" value="C">C<br>
+      <input type="checkbox" id="lang-cpp" name="languages" value="C++">C++<br>
+      <input type="checkbox" id="lang-java" name="languages" value="Java">Java<br>
+      <input type="checkbox" id="lang-python" name="languages" value="Python">Python<br>
+      <input type="checkbox" id="lang-react" name="languages" value="React">React<br>
+      <input type="checkbox" id="lang-js" name="languages" value="JavaScript">JavaScript<br>
+      <input type="checkbox" id="lang-angular" name="languages" value="Angular">Angular<br>
+      <input type="checkbox" id="lang-spring" name="languages" value="Spring">Spring<br>
+    </div>
+    <div class="form-control">
+      <label for="comment">Any comments or suggestions</label>
+      <textarea id="comment" rows="4" placeholder="Write your comment here..."></textarea>
+    </div>
+
+    <div class="form-control">
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+
+</body>
+</html>
